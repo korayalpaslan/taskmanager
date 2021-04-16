@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+--Bright-Blue: hsl(220, 98%, 61%);
+--Check-Background-linear-gradient: hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+--Very-Dark-Blue: hsl(235, 21%, 11%);
+--Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+--Light-Grayish-Blue: hsl(234, 39%, 85%);
+--Light-Grayish-Blue: hsl(236, 33%, 92%);
+--Dark-Grayish-Blue: hsl(234, 11%, 52%);
+--Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+--Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+font-family: 'Josefin Sans', sans-serif;
+font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.container {
+    background-image: url('images/bg-mobile-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+}
+
+.header h3{
+    text-transform: uppercase;
+    color: var(--Light-Grayish-Blue);
+    font-size: 30px;
+    padding-top: 0.2em;
+    letter-spacing: 0.3em;
+}
+
+.header img {
+    height: 28px;
+    width: 28px;
+    align-self: center;
+}
+
+.new-todo {
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    padding: 1em;
+    margin: 0 1.5em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.add-todo {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--Dark-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(192,88,243);
+    background: linear-gradient(315deg, rgba(192,88,243,1) 0%, rgba(87,221,240,1) 100%);
+}
+
+.add-todo img {
+    height: 10px;
+    width: 10px;
+}
+
+#create-todo {
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    margin-left: 1em;
+    padding: 0.3em;
+    font-family: 'Josefin Sans', sans-serif;
+    outline: none;
+    border-style: none;
+    color: var(--Dark-Grayish-Blue);
+    flex-grow: 1;
+}
+
+.todo-list {
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    margin: 0 1.5em;
+    border-radius: 5px;
+}
+
+ul {
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 1em;
+    border-bottom: 1px solid var(--Dark-Grayish-Blue);
+}
+
+#todo-mark {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--Dark-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.completed div {
+    background: rgb(192,88,243);
+    background: linear-gradient(315deg, rgba(192,88,243,1) 0%, rgba(87,221,240,1) 100%);
+}
+
+.todo-mark img {
+    height: 10px;
+    width: 10px;
+}
+
+li p{
+    font-size: 13px;
+    color: var(--Light-Grayish-Blue);
+    margin: 0.5em 1.5em;
+}
+
+.completed p{
+    text-decoration: line-through;
+    color: var(--Dark-Grayish-Blue);
+}
+
+#delete-todo {
+    margin-left: auto;
+    height: 15px;
+    width: 15px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1em;
+    margin: 0;
+}
+
+.summary p {
+    font-size: 13px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.todo-filter {
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    padding: 0.5em 1em;
+    margin: 1em 2em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.todo-filter p {
+    font-size: 16px;
+    color: var(--Dark-Grayish-Blue);
+    margin-left: 0.5em;
+    margin-right: .5em;
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--Dark-Grayish-Blue);
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .container {
+        background-image: url('images/bg-desktop-dark.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+
+    .table-block{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1em;
+    }
+
+
+}

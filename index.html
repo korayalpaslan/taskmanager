@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Todo app</title>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="table-block">
+
+    <div class="header">
+      <h3>Todo</h3>
+      <img src="images/icon-sun.svg" alt="Icon">
+    </div>
+
+    <div class="new-todo">
+      <div class="add-todo">
+        <img src="images/icon-check.svg" alt="Check">
+      </div>
+      <input id="create-todo" type="text" onfocus="this.placeholder = ''"; placeholder="Create a new todo"; onblur="this.placeholder = 'Create a new todo'">
+    </div>
+
+    <div class="todo-list">
+      <ul id="task-list">
+        <!-- <li>
+          <div class="todo-mark">
+            <img src="images/icon-check.svg" alt="Check">
+          </div>
+          <p></p>
+          <img src="images/icon-cross.svg" alt="" id="delete-todo">
+        </li> -->
+      </ul>
+  
+      <div class="summary">
+        <p id="items">items left</p>
+        <p id="clear-todos">Clear Completed</p>
+      </div>
+    </div>
+
+    <div class="todo-filter">
+      <p id="all">All</p>
+      <p id="active">Active</p>
+      <p id="completed">Completed</p>
+    </div>
+
+    <!-- <footer>
+      <p>Drag and drop to reorder list</p>
+    </footer> -->
+
+    </div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
