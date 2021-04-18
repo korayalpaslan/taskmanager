@@ -148,18 +148,14 @@ function deleteTodoFromStorage(deletetodo){
 
 // 6. ADIM GÖREV TAMAMLANDI
 
-number = 0;
-
 function completedTask(e){
 
-  number ++;
-
-  if(e.target.id === "todo-mark" && number % 2 != 0){
+  if(e.target.id === "todo-mark" && e.target.parentElement.className !== "completed"){
 
     e.target.parentElement.classList.add("completed");
     countItemsLeft(); // 7. Adım
 
-  } else {
+  } else if (e.target.id === "todo-mark" && e.target.parentElement.className === "completed") {
 
     e.target.parentElement.classList.remove("completed");
     countItemsLeft(); // 7. Adım
