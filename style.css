@@ -63,6 +63,10 @@ body {
     align-items: center;
 }
 
+.new-todo input {
+    font-size: 15px;
+}
+
 .add-todo {
     height: 20px;
     width: 20px;
@@ -135,7 +139,7 @@ li {
 }
 
 li p{
-    font-size: 13px;
+    font-size: 15px;
     color: var(--Light-Grayish-Blue);
     margin: 0.5em 1.5em;
 }
@@ -160,7 +164,7 @@ li p{
 }
 
 .summary p {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--Dark-Grayish-Blue);
 }
 
@@ -176,7 +180,7 @@ li p{
 }
 
 .todo-filter p {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--Dark-Grayish-Blue);
     margin-left: 0.5em;
     margin-right: .5em;
